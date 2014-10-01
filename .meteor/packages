@@ -7,5 +7,15 @@ meteor-platform
 autopublish
 insecure
 mizzao:bootstrap-3
+accounts-base
+accounts-ui
 iron:router
-
+coffeescript
+less
+accounts-password
+mrt:minimongoid@0.8.8
+iron:router
+cmather:handlebars-server@0.2.0
+joshowens:accounts-entry
+joshowens:simple-form
+meteorhacks:zones

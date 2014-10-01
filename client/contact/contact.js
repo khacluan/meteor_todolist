@@ -1,5 +1,4 @@
 if (Meteor.isClient) {
-  Contacts = new Meteor.Collection('contacts');
   Template.contact.events({
     'click #contact_submit': function(event, tpl){
       var email = tpl.find("input[name='email']").value,
