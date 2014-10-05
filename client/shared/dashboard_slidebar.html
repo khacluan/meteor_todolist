@@ -1,0 +1,31 @@
+<template name="dashboardSidebar">
+  <div class="col-sm-3 col-md-2 sidebar ">
+    <ul class="nav nav-sidebar">
+      <li class="divider">
+        <a href="#"><span class='glyphicon glyphicon-dashboard'></span>Dashboard</a>
+      </li>
+      <li class="{{active '/dashboard/contacts'}}">
+        <a href="/dashboard/contacts"><span class='glyphicon glyphicon-heart'></span>Contacts</a>
+      </li>
+      <li class="{{active '/dashboard/users'}}">
+        <a href="/dashboard/users"><span class='glyphicon glyphicon-user'></span>Users</a>
+      </li>
+      <li class="{{active '/dashboard/posts'}}">
+        <a href="/dashboard/posts"><span class='glyphicon glyphicon-pencil'></span>Posts</a>
+      </li>
+    </ul>
+    <ul class="nav nav-sidebar">
+      <li class="divider"><a href="#"><span class='glyphicon glyphicon-cog'></span>Settings</a></li>
+      <li class="{{active '/dashboard/categories'}}"><a href="/dashboard/categories"><span class='glyphicon glyphicon-list-alt'></span>Category</a></li>
+      <li><a href=""><span class='glyphicon glyphicon-align-right'></span>Menu</a></li>
+      <li><a href=""><span class='glyphicon glyphicon-time'></span>Role</a></li>
+      <li><a href=""><span class='glyphicon glyphicon-briefcase'></span>Advertisement</a></li>
+    </ul>
+    <ul class="nav nav-sidebar">
+      <li class="divider"><a href="#"><span class='glyphicon glyphicon-stats'></span>Reports</a></li>
+      <li class=""><a href="#"><span class='glyphicon glyphicon-screenshot'></span>Activity</a></li>
+      <li class=""><a href="#"><span class='glyphicon glyphicon-signal'></span>Users Chart</a></li>
+      <li class=""><a href="#"><span class='glyphicon glyphicon-list-alt'></span>Plan</a></li>
+    </ul>
+  </div>
+</template>

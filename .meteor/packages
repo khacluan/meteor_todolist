@@ -4,7 +4,7 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
+jquery
 insecure
 mizzao:bootstrap-3
 accounts-base
@@ -21,4 +21,5 @@ joshowens:simple-form
 meteorhacks:zones
 aldeed:collection2
 aldeed:autoform
-
+email
+publish-with-relations

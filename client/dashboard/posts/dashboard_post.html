@@ -1,0 +1,24 @@
+<template name="dashboardPost">
+  <table class="table table-striped table-bordered table-hover table-curved">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Title</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each posts}}
+      <tr>
+        <td>{{ _id }}</td>
+        <td class="email">{{ title }}</td>
+        <td>{{ authorFor authorId }}</td>
+        <td>
+          <a href="#" data-id={{_id}} class="btn btn-xs btn-danger action-delete">Delete</a>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>

@@ -2,13 +2,25 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "accounts-entry": {}
+      "accounts-entry": {},
+      "publish-with-relations": {},
+      "iron-router-progress": {}
     },
     "packages": {
       "accounts-entry": {
         "git": "https://github.com/Differential/accounts-entry.git",
         "tag": "v0.8.1",
         "commit": "3102c0641cab394ce4c3e54b655c85ec1610c092"
+      },
+      "publish-with-relations": {
+        "git": "https://github.com/erundook/meteor-publish-with-relations.git",
+        "tag": "v0.1.5",
+        "commit": "98213e9f056b139597c99fb9ec2884ae6be76d91"
+      },
+      "iron-router-progress": {
+        "git": "https://github.com/Multiply/iron-router-progress.git",
+        "tag": "v0.4.1",
+        "commit": "496fcda9a6ec352b4733725f60c6f280250c3541"
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",

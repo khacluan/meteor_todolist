@@ -1,0 +1,30 @@
+<template name="dashboardContact">
+  <table class="table table-striped table-bordered table-hover table-curved">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Email</th>
+        <th>Title</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each contacts}}
+      <tr>
+        <td>{{ _id }}</td>
+        <td class="email">{{ email }}</td>
+        <td>{{ title }}</td>
+        <td>
+          <a href="/dashboard/contact/{{_id}}" class="btn btn-xs btn-primary">view</a>
+          {{#if is_reply}}
+          <a href="#" class="btn btn-xs btn-success" onclick="return false;"><span class='glyphicon glyphicon-ok-circle'></span>Sent&nbsp;</a>
+          {{else}}
+          <a href="#" data-id={{_id}} class="btn btn-xs btn-primary action-reply" data-loading-text="<i class='icon-spinner icon-spin icon-large'></i>Sending ..."><span class='glyphicon glyphicon-send'></span>Send</a>
+          {{/if}}
+          <a href="#" data-id={{_id}} class="btn btn-xs btn-danger action-delete">Delete</a>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>

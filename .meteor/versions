@@ -6,7 +6,6 @@ aldeed:autoform@3.1.0
 aldeed:collection2@2.1.0
 aldeed:simple-schema@1.0.3
 application-configuration@1.0.2
-autopublish@1.0.0
 autoupdate@1.1.1
 base64@1.0.0
 binary-heap@1.0.0
@@ -61,6 +60,7 @@ mrt:underscore-string-latest@2.3.3
 npm-bcrypt@0.7.7
 observe-sequence@1.0.2
 ordered-dict@1.0.0
+publish-with-relations@0.0.0
 random@1.0.0
 reactive-dict@1.0.3
 reactive-var@1.0.2

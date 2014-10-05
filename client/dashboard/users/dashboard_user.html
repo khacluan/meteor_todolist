@@ -1,0 +1,28 @@
+<template name="dashboardUser">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Email</th>
+        <th>status</th>
+        <th>Title</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each users}}
+      <tr>
+        <td>{{ _id }}</td>
+        {{#each emails }}
+        <td class="email">{{address}}</td>
+        <td>{{verified}}</td>
+        {{/each}}
+        <td>{{ profile.name }}</td>
+        <td>
+          <a href="#" data-id={{_id}} class="btn btn-xs btn-danger action-delete">Delete</a>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>

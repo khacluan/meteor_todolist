@@ -1,5 +1,7 @@
 {
   "packages": {
-    "accounts-entry": {}
+    "accounts-entry": {},
+    "publish-with-relations": {},
+    "iron-router-progress": {}
   }
 }
