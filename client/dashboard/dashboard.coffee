@@ -4,7 +4,6 @@ Template.dashboardSidebar.helpers
 
 Template.toolbarFixed.helpers
   addLinkFor: ->
-    console.log Router
     el_path = Router.current().path.split('/')
     model = el_path[el_path.length - 1]
     if model == 'categories'
